@@ -1,0 +1,73 @@
+:root{
+/* Base — deep blacks & navies */
+--mx-black:#03060d;
+--mx-ink-950:#040912;
+--mx-ink-900:#060d1a;
+--mx-navy-900:#081224;
+--mx-navy-800:#0b172c;
+--mx-navy-700:#10203b;
+--mx-navy-600:#172b4d;
+--mx-navy-500:#233c66;
+/* Accent — electric blue & cyan */
+--mx-blue-600:#1f63e6;
+--mx-blue-500:#2f7bff;
+--mx-blue-400:#4f93ff;
+--mx-blue-300:#84b4ff;
+--mx-blue-200:#b9d4ff;
+--mx-cyan-500:#1fc2f0;
+--mx-cyan-400:#45d3ff;
+--mx-cyan-300:#8ee6ff;
+/* Neutrals (cool) */
+--mx-white:#ffffff;
+--mx-gray-100:#eef2f8;
+--mx-gray-200:#cfd7e4;
+--mx-gray-300:#aab5c7;
+--mx-gray-400:#8391a8;
+--mx-gray-500:#5f6c84;
+--mx-gray-600:#3e4960;
+/* Semantic */
+--mx-green-400:#3ccf98;
+--mx-amber-400:#f3b54a;
+--mx-red-400:#ff6f6f;
+
+/* Foreground */
+--fg-1:#f4f7fc;
+--fg-2:var(--mx-gray-200);
+--fg-3:var(--mx-gray-300);
+--fg-4:var(--mx-gray-400);
+--fg-accent:var(--mx-blue-400);
+--fg-accent-strong:var(--mx-blue-500);
+--fg-cyan:var(--mx-cyan-400);
+--fg-on-inverse:#061022;
+
+/* Surfaces */
+--surface-page:var(--mx-black);
+--surface-section:var(--mx-ink-950);
+--surface-raised:var(--mx-navy-900);
+--surface-card:rgba(11,22,42,.62);
+--surface-card-hover:rgba(15,30,56,.72);
+--surface-glass:rgba(8,18,36,.52);
+--surface-glass-strong:rgba(6,14,28,.78);
+--surface-input:rgba(4,10,20,.6);
+--surface-inverse:var(--mx-white);
+--surface-accent:var(--mx-blue-500);
+--surface-accent-soft:rgba(47,123,255,.12);
+--surface-overlay:rgba(2,5,12,.72);
+
+/* Borders */
+--border-subtle:rgba(132,170,255,.09);
+--border-default:rgba(132,170,255,.15);
+--border-strong:rgba(132,170,255,.26);
+--border-accent:rgba(63,138,255,.55);
+--border-inverse:rgba(255,255,255,.7);
+
+/* Semantic aliases */
+--text-body:var(--fg-2);
+--text-heading:var(--fg-1);
+--text-muted:var(--fg-4);
+--text-highlight:var(--mx-blue-500);
+--state-success:var(--mx-green-400);
+--state-warning:var(--mx-amber-400);
+--state-danger:var(--mx-red-400);
+--focus-ring:0 0 0 2px var(--mx-black),0 0 0 4px var(--mx-blue-400);
+}

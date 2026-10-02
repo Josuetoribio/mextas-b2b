@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x290" name="Core — buttons, badges, wordmark" -->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0}.mx-root{min-height:100vh;padding:22px 24px;display:flex;flex-direction:column;gap:18px}.r{display:flex;gap:12px;flex-wrap:wrap;align-items:center}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Eyebrow, Badge, Wordmark, Icon } = window.MextasDesignSystem_752eb8;
+function Demo(){return <>
+<div className="r"><Button arrow>Solicitar propuesta</Button><Button variant="secondary">Ver soluciones</Button><Button variant="accent" arrow>Continuar</Button><Button variant="ghost" icon="arrow-left">Atrás</Button><Button variant="link" iconRight="arrow-right">Ver todas</Button></div>
+<div className="r"><Button size="sm" arrow>Pequeño</Button><Button size="lg" arrow>Grande</Button><Button disabled>Deshabilitado</Button><IconButton icon="chevron-left" label="Anterior"/><IconButton icon="chevron-right" label="Siguiente"/><IconButton icon="arrow-right" variant="solid" label="Ir"/></div>
+<div className="r"><Eyebrow>Soluciones</Eyebrow><Eyebrow tone="muted" mark={false}>Empresas que confían</Eyebrow></div>
+<div className="r"><Badge>Construcción</Badge><Badge tone="accent">01 · Presencia</Badge><Badge tone="success" dot>Entregado</Badge><Badge tone="demo" dot>Demostración</Badge><Wordmark size={26}/></div></>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<div className="mx-root"><Demo/></div>);
+</script></body></html>
