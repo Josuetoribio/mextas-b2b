@@ -23,7 +23,7 @@ function useCountUp(target, run, dur = 1600) {
   return v;
 }
 
-const NAV = [['soluciones', 'Soluciones'], ['proceso', 'Cómo trabajamos'], ['casos', 'Casos de éxito'], ['empresas', 'Empresas'], ['nosotros', 'Nosotros'], ['contacto', 'Contacto']];
+const NAV = [['soluciones', 'Soluciones'], ['proceso', 'Cómo trabajamos'], ['casos', 'Casos de éxito'], ['etapas', 'Empresas'], ['nosotros', 'Nosotros'], ['contacto', 'Contacto']];
 
 function Nav({ onPropose }) {
   const [scrolled, setScrolled] = React.useState(false);
