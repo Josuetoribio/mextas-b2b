@@ -1,0 +1,45 @@
+/* Ajustes de la versión publicada en mextas.com/b2b/.
+   El export original no se toca: el build enlaza este archivo al final del <head>.
+   Objetivo: que la landing se lea bien en celulares (320–414 px) sin cambiar el escritorio. */
+
+/* «Conoce cómo trabajamos»: la regla de los subtítulos del pie de foto (.met__cap span)
+   también alcanzaba la palabra resaltada del título: la dejaba a 13 px y en gris. */
+.met__cap b .mx-accent { display: inline; font-size: inherit; gap: 0; color: var(--text-highlight); }
+
+@media (max-width: 1020px) {
+  /* Etiquetas de casos y nota de «Hasta 12 h»: al partirse en dos líneas heredaban el alto
+     de línea del texto de 16 px y quedaban muy separadas. */
+  .ccard__m span { display: block; line-height: 1.35; margin-top: 6px; }
+  .bigstat .demo-note { display: block; margin-top: 4px; }
+}
+
+@media (max-width: 640px) {
+  /* Eyebrows de dos líneas: con line-height 1 las líneas quedaban pegadas. */
+  .mx-eyebrow { line-height: 1.45; }
+
+  /* Cadena Problema → Resultado: el carrusel horizontal cortaba «Estrategia», recortaba los
+     íconos y escondía dos pasos. En vertical, como en escritorio, se ven los cinco. */
+  .chain { flex-direction: column; overflow: visible; gap: 0; }
+  .chain__step { flex-direction: row; align-items: center; min-width: 0; padding: 10px 0; gap: 14px; }
+  .chain__step:not(:last-child)::after { display: block; top: 54px; height: calc(100% - 44px); }
+  .chain__s { display: block; }
+
+  /* Tarjetas de soluciones: «Ver más» se partía en dos líneas y se encimaba con el dato;
+     basta la flecha, como en escritorio sin hover. */
+  .scard__cta { display: none; }
+  .scard__stat { white-space: nowrap; }
+
+  /* Analítica: las cifras grandes no cabían en media columna y el embudo pegaba
+     «Clientes» con su número. */
+  .ana__k { padding: 16px; }
+  .ana__k .v { font-size: clamp(22px, 7vw, 30px); }
+  .funnel div { min-width: max-content; gap: 12px; }
+
+  /* Pestañas de la vista del sistema: se desplazan en horizontal; el desvanecido indica que
+     hay más en lugar de mostrar una pestaña cortada. */
+  .app__side {
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent);
+    mask-image: linear-gradient(90deg, #000 82%, transparent);
+  }
+}

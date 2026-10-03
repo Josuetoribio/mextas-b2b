@@ -43,6 +43,14 @@ horizontal en móviles, van en `overrides.css`. Al estar fuera de `ui_kits/`, un
 exportación de Claude Design no las borra. Si un nuevo export cambia el diseño, revisa que
 sigan siendo necesarias.
 
+Hoy corrige en celulares (hasta 640 px, salvo donde se indica):
+
+- La cadena «Problema → Resultado» pasa a vertical, con los cinco pasos visibles.
+- En las tarjetas de soluciones se quita «Ver más», que se encimaba con el dato; queda la flecha.
+- Las cifras de analítica caben en su tarjeta y el embudo separa cada etiqueta de su número.
+- Hasta 1020 px: interlineado de las etiquetas de casos y de la nota de «Hasta 12 h».
+- En todos los anchos: la palabra resaltada de «Conoce cómo trabajamos» tenía 13 px y salía gris.
+
 ## Actualizar la landing
 
 1. Sustituye los archivos por el nuevo export. Conserva `scripts/`, `package.json`,
